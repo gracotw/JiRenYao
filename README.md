@@ -16,3 +16,11 @@ This is an Android app that mimics the GUI of sending SMS. It is
 mainly for dealing with the privacy issues on Taiwan's QR code for 
 real-name registration. This app will keep those 1922 messages locally
 instead of sending the real SMS out.
+
+## 使用方式
+
+點開 "l922". 按下 "送出", 然後掃描 QR code. 然後再按下 "送出".
+
+界面內只會顯示最近兩筆紀錄.
+
+完整紀錄檔案存在 'Android/data/onion.d25a470b.gracotw.jirenyao/files/MyFileStorage/l922.json'
