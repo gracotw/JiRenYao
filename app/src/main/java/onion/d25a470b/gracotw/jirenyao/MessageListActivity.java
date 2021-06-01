@@ -391,23 +391,26 @@ class MessageListAdapter extends androidx.recyclerview.widget.RecyclerView.Adapt
     }
 
     private class SentMessageHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder {
-        android.widget.TextView messageText, timeText;
+        android.widget.TextView messageText, timeText, dateText;
 
         SentMessageHolder(android.view.View itemView) {
             super(itemView);
 
             messageText = (android.widget.TextView) itemView.findViewById(R.id.text_gchat_message_me);
             timeText = (android.widget.TextView) itemView.findViewById(R.id.text_gchat_timestamp_me);
+            dateText = (android.widget.TextView) itemView.findViewById(R.id.text_gchat_date_me);
         }
 
         void bind(Message message) {
             messageText.setText(message.getMessage());
             java.util.Date date1 = new java.util.Date();
             date1.setTime(message.getCreatedAt());
-            java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy '年' MM '月' dd '日'");
+            java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("hh:mm");
+            String taiwanFullDate = java.text.DateFormat.getDateInstance(java.text.DateFormat.FULL, java.util.Locale.TAIWAN).format(date1);
 
             // Format the stored timestamp into a readable String using method.
             timeText.setText(dateFormat.format(date1));
+            dateText.setText(taiwanFullDate);
         }
     }
 
