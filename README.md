@@ -1,6 +1,6 @@
 # JiRenYao 簡訊
 
-此為 Android app. 用以掃描 X管Y (X=疾, Y=家) 的 QR code.
+此為 Android app. 用以掃描 實聯制 的 QR code.
 並且保護使用者的隱私.
 
 本 app 模擬簡訊界面. 但並不會真的送出簡訊.
@@ -24,3 +24,7 @@ instead of sending the real SMS out.
 界面內只會顯示最近兩筆紀錄.
 
 完整紀錄檔案存在 'Android/data/onion.d25a470b.gracotw.jirenyao/files/MyFileStorage/l922.json'
+
+## 如何下載?
+
+請點選 Release, 然後下載 apk 至手機安裝. 
