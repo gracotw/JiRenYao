@@ -12,10 +12,14 @@
 我們相信, 只有把資料存在本端, 程式碼開源, 自己決定要不要公佈本端資料, 
 才是真正的保護隱私.
 
+2022/04/27: 中華民國國家衛生指揮中心中央流行疫情指揮中心宣佈取消實聯制措施, 可以不用再安裝這個 app 了. 已安裝者也可以移除了.
+
 This is an Android app that mimics the GUI of sending SMS. It is
 mainly for dealing with the privacy issues on Taiwan's QR code for 
 real-name registration. This app will keep those 1922 messages locally
 instead of sending the real SMS out.
+
+27th Apr 2022: The Central Epidemic Command Center of Taiwan (ROC) announced that there's no more real-name registration for public services and places. Please stop installing this app as it is useless anymore.
 
 ## 使用方式
 
